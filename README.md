@@ -12,7 +12,7 @@ $ npm start
 	
 
 	var hostProxy = proxy({
-	  	target: 'http://10.10.2.156:8080',
+	  	target: 'http://10.10.10.10:8080',
 	 	changeOrigin: true,
 	  	logLevel: 'debug'
 	});
@@ -56,13 +56,13 @@ $ npm run deploy
     │   │  │
     │   │  └─module     // 业务功能模块
     │   │      │
-    │   │      ├─systemConfig1
-    │   │      │    │
+    │   │      ├─moudle1
+    │   │      │    │
     │   │      │    ├─components    // 模块内部组件
     │   │      │    │
     │   │      │    └─reflux        // 模块内部reflux
     │   │      │
-    │   │      └─systemConfig2          
+    │   │      └─moudle2          
     │   │              
     │   └─util          // 全局公用方法
     │
@@ -73,6 +73,7 @@ $ npm run deploy
     ├── webpack.config.js          // webpack 配置文件
     └── webpack.config.production.js  // webpack配置文件
 
+
 #
 
 ### 技术栈
@@ -80,7 +81,7 @@ $ npm run deploy
 
 ### 注意
     1、项目涉及到的js文件后缀名全为.js
-    2、文件命名为小驼峰格式，如： systemConfig
+    2、文件命名为小驼峰格式
 
 
 ### 资料与感谢
