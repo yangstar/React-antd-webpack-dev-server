@@ -42,7 +42,7 @@ module.exports = {
     // new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.[chunkhash:8].js'),
 
     new HtmlWebpackPlugin({
-      title: '新城保理MS',
+      title: '模板',
       filename: 'index.html',
       template: 'index.template.html',
       favicon: path.join(__dirname, 'src', 'global', 'assets', 'images', 'favicon.ico')
